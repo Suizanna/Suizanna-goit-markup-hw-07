@@ -754,6 +754,7 @@ img {
 .button-list {
   display: flex;
   justify-content: center;
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -802,13 +803,44 @@ img {
   color: var(--title-text-color);
 }
 /* ПОРТФОЛИО КАРТОЧКИ */
-.container .carts {
+.container-img {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 94px;
+}
+.container-img .carts {
   border: 1px solid #eeeeee;
   /*border-top: none;*/
 }
+
 .border {
   border: 1px solid #eeeeee;
   border-top: none;
+}
+.img-title {
+  display: block;
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+.img-text {
+  color: var(--primary-text-color); /* #757575;*/
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 400;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  letter-spacing: 0.03em;
 }
 .overlay {
   position: absolute;
@@ -847,7 +879,7 @@ img {
 }
 .project-list-item:hover {
   box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgb(0, 0, 0, 0.06), 1px 4px 4px rgb(0, 0, 0, 0.16);
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
 .project-list-item {
@@ -884,28 +916,26 @@ img {
   opacity: 1;
   background: rgba(33, 150, 243, 0.9);
 }
-.img-title {
-  display: block;
-  color: var(--title-text-color);
-  font-size: 18px;
-  line-height: 2;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  padding-bottom: 4px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 20px;
+/*.project-list-item::before {
+    display: inline-block;
+    counter-reset: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; 
+    transform: translateX(-100%);
 }
-.img-text {
-  color: var(--primary-text-color); /* #757575;*/
-  font-size: 16px;
-  line-height: 1.87;
-  font-weight: 400;
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-  letter-spacing: 0.03em;
+.project-list .project-list-item:hover {
+    transform: translateX(0);
 }
+/*.img { 
+    height: 294px; 
+    width: 370px;
+    border-radius: 0px;  
+    background: url(portfolio-1.jpg);
+    
+}*/
 
 /*========================backdrop-modal ================================*/
 .backdrop {
