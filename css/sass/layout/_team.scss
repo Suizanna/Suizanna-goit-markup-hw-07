@@ -1,0 +1,80 @@
+/*========Команда=============*/
+.team {
+  background-color: var(--second-bg-color); /*#f5f4fa;*/
+  padding-bottom: 94px; /*на секцию задаем*/
+}
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  /*margin-bottom: 50px;*/
+  line-height: 1.16;
+  text-align: center;
+  padding-bottom: 50px; /*от Наша команда до img*/
+  padding-top: 94px;
+}
+.team-flex {
+  display: flex;
+  justify-content: space-between; /*фото в строку*/
+  /* padding-left: 15px; /*между фото*/
+  /* padding-right: 15px; */
+}
+.team-flex-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-bg-color);
+}
+.team-text {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.16;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px; /*от имени до проф.*/
+}
+.team-prof {
+  font-size: 16px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--primary-text-color); /* #757575;*/
+  margin-bottom: 16px;
+}
+/* ИКОНИКИ icons под фото team 1 стр Итнстаграм */
+.icons {
+  padding-bottom: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 30px;
+}
+.icon-list-link:hover .icon-list-svg,
+.icon-list-link:focus .icon-list-svg {
+  fill: var(--primary-bg-color);
+}
+.icon-list-link:hover,
+.icon-list-link:focus {
+  background-color: var(--accent-color);
+}
+.icon-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.icon-list {
+  display: flex;
+  justify-content: center;
+}
+.icon-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  margin-right: 10px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавный переход цвета при ховере*/
+}
+.icon-list-link:nth-last-child(-n + 4) {
+  margin-right: 0;
+}

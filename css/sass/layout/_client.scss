@@ -1,0 +1,44 @@
+/*Секция о постоянных клиентах*/
+.client {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px; /*от h2 до img*/
+  text-align: center;
+  color: var(--title-text-color); /*#212121;*/
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.client-item {
+  width: 170px;
+  height: 90px;
+  /* margin-right: 30px;*/
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавный переход цвета при ховере*/
+}
+.client-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+}
+.client-link:hover {
+  border-color: var(--accent-color);
+}

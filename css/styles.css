@@ -56,7 +56,6 @@ h3 {
 p {
   letter-spacing: 0.03em;
 }
-
 .link {
   text-decoration: none;
   padding: 0;
@@ -85,17 +84,17 @@ img {
   /* outline: 1px solid red; */
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/*@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     width: 100%;
     max-width: 480px;
   }
-}
-/*==========*/
+}*/
+/*=============HEADER==============*/
 .header {
   border-bottom: 1px solid #ececec;
 }
-/*.container-main {
+.container-main {
   justify-content: space-between;
   display: flex;
   width: 1200px;
@@ -133,18 +132,16 @@ img {
   color: var(--accent-color);
 }
 /* Навигация на другие страницы ========== */
-/*.site-nav .link:hover,
+.site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link:active,
 .site-nav .link.current {
   color: var(--accent-color);
 }
-/*.site-nav .link.visited {} */
-
-/*.site-nav .link {
+.site-nav .link {
   /*font-family: Roboto;
     font-style: normal;*/
-/* display: block;
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -158,7 +155,7 @@ img {
   border: 1px solid transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 1px solid transparent;*/
-/*}
+}
 .site-nav .item + .item {
   margin-left: 53px;
 }
@@ -181,12 +178,9 @@ img {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
-/*.item {
-    margin-top: 32px;
-    margin-bottom: 32px;
-}*/
+/*================THE-AND-HEADER=================*/
 
-/* КОНТАКТЫ ТЕЛ ИКОНКИ*===============*/
+/*====CONTACT-NAV====КОНТАКТЫ ТЕЛ ИКОНКИ*==========*/
 .contact-item-svg-envelope {
   width: 16px;
   height: 12px;
@@ -206,7 +200,6 @@ img {
 .link:hover {
   fill: var(--accent-color);
 }
-
 .contact-nav .link {
   /*font-family: Roboto;*/
   font-size: 14px;
@@ -301,25 +294,29 @@ img {
 }
 
 /* Наши Особенности текст ========*/
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 auto; */
+  /* list-style: none;*/
+}
+.features-list-item {
+  margin: 0 auto;
+}
 .feature-item-logo {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--second-bg-color); /*#f5f4fa;*/
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.features-list {
-  display: flex;
-  justify-content: space-between;
-  /* margin: 0 auto;*/
-  /* list-style: none;*/
 }
 .features-title {
   font-style: normal;
@@ -340,15 +337,28 @@ img {
   line-height: 1.71;
   color: var(--primary-text-color); /* #757575;*/
 }
-
-/* Наши Особенности* Картинки-антена и т д ===========*/
+/*===FEATURES=====Наши Особенности ИКОНКИ 1стр========*/
+.list {
+  display: flex;
+  list-style: none;
+  /*padding: ;*/
+}
+.list-item {
+  width: 350px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+/* Наши Особенности Картинки-антена и т д ===========*/
 .list-item::before {
   display: block; /*сдела по видео-уроку 20.11.*/
   content: "";
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
+  background-color: var(--second-bg-color);
   background-repeat: no-repeat;
   background-size: 65px 70px;
   background-position: center;
@@ -382,20 +392,7 @@ img {
 /*.list-item-Astronaut .feature-item-logo:hover::before {
     color: var(--accent-color);
 }*/
-/*========Наши Особенности ИКОНКИ 1стр========*/
-.list {
-  display: flex;
-  list-style: none;
-  /*padding: ;*/
-}
-.list-item {
-  width: 350px;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-}
+/* ============================================================ */
 
 /*Примеры работ* ===============================*/
 .work {
@@ -448,33 +445,32 @@ img {
   text-transform: uppercase;
   color: var(--primary-bg-color);
 }
-/*Команда*/
+/*========Команда=============*/
 .team {
-  background: #f5f4fa;
-  /* padding-bottom: 94px; */ /*на секцию задаем*/
+  background-color: var(--second-bg-color); /*#f5f4fa;*/
+  padding-top: 94px;
+  padding-bottom: 94px; /*на секцию задаем*/
 }
 .team-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  /*margin-bottom: 50px;*/
-  line-height: 1, 16;
+  line-height: 1.16;
   text-align: center;
   padding-bottom: 50px; /*от Наша команда до img*/
-  padding-top: 94px;
 }
 .team-flex {
   display: flex;
   justify-content: space-between; /*фото в строку*/
-  padding-bottom: 94px; /* до футера*/
-  padding-left: 15px; /*между фото*/
-  padding-right: 15px;
+  /* padding-left: 15px; /*между фото*/
+  /* padding-right: 15px; */
 }
+
 .team-flex-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background: #ffffff;
+  background-color: var(--primary-bg-color);
 }
 .team-text {
   color: var(--title-text-color);
@@ -492,6 +488,44 @@ img {
   color: var(--primary-text-color); /* #757575;*/
   margin-bottom: 16px;
 }
+/* ИКОНИКИ icons под фото team 1 стр Итнстаграм */
+.icons {
+  padding-bottom: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 30px;
+}
+.icon-list-link:hover .icon-list-svg,
+.icon-list-link:focus .icon-list-svg {
+  fill: var(--primary-bg-color);
+}
+.icon-list-link:hover,
+.icon-list-link:focus {
+  background-color: var(--accent-color);
+}
+.icon-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.icon-list {
+  display: flex;
+  justify-content: center;
+}
+.icon-list-link {
+  display: flex;
+  justify-content: center; /*выравниваем по центру link*/
+  align-items: center; /*выравниваем по центру*/
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  margin-right: 10px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавный переход цвета при ховере*/
+}
+.icon-list-link:nth-last-child(-n + 4) {
+  margin-right: 0;
+}
+/* ====================================== */
 
 /*Секция о постоянных клиентах*/
 .client {
@@ -504,7 +538,7 @@ img {
   line-height: 1.16;
   margin-bottom: 50px; /*от h2 до img*/
   text-align: center;
-  color: #212121;
+  color: var(--title-text-color); /*#212121;*/
 }
 .client-list {
   display: flex;
@@ -537,47 +571,8 @@ img {
 .client-link:hover {
   border-color: var(--accent-color);
 }
-
-/* ИКОНИКИ icons под фото 1 стр Итнстаграм */
-.icons {
-  padding-bottom: 16px;
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-bottom: 30px;
-}
-
-.icon-list-link:hover .icon-list-svg,
-.icon-list-link:focus .icon-list-svg {
-  fill: var(--primary-bg-color);
-}
-.icon-list-link:hover,
-.icon-list-link:focus {
-  background-color: var(--accent-color);
-}
-.icon-list-svg {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
-.icon-list {
-  display: flex;
-  justify-content: center;
-}
-.icon-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  margin-right: 10px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавный переход цвета при ховере*/
-}
-.icon-list-link:nth-last-child(-n + 4) {
-  margin-right: 0;
-}
-
-/*ФУТЕР*/
+/* ================================================= */
+/*===========ФУТЕР==========================*/
 .footer-title {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -613,7 +608,6 @@ img {
   background: var(--third-bg-color);
   /* margin-top: 72px;*/
 }
-
 /*===ИКОНКИ ФУТЕР===*/
 .social-list {
   display: flex;
@@ -646,8 +640,6 @@ img {
 .social-list-link:hover {
   background-color: var(--accent-color);
 }
-/*================*/
-
 /*=======ФУТЕР ЛОГО==========*/
 .footer-logo {
   display: block;
@@ -747,8 +739,13 @@ img {
   cursor: pointer;
   margin-left: 12px;
 }
-/* Герой Портфолио* 2-я стр ==============*/
-.container-page-nav {
+/* =================================================== */
+/* Портфолио ==============*/
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -757,7 +754,6 @@ img {
 .button-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -806,19 +802,10 @@ img {
   color: var(--title-text-color);
 }
 /* ПОРТФОЛИО КАРТОЧКИ */
-.container-img {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 94px;
-}
-.container-img .carts {
+.container .carts {
   border: 1px solid #eeeeee;
   /*border-top: none;*/
 }
-
 .border {
   border: 1px solid #eeeeee;
   border-top: none;
@@ -897,28 +884,30 @@ img {
   opacity: 1;
   background: rgba(33, 150, 243, 0.9);
 }
-/*.project-list-item::before {
-    display: inline-block;
-    counter-reset: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%; 
-    transform: translateX(-100%);
+.img-title {
+  display: block;
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
 }
-.project-list .project-list-item:hover {
-    transform: translateX(0);
+.img-text {
+  color: var(--primary-text-color); /* #757575;*/
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 400;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  letter-spacing: 0.03em;
 }
-/*.img { 
-    height: 294px; 
-    width: 370px;
-    border-radius: 0px;  
-    background: url(portfolio-1.jpg);
-    
-}*/
 
-/*========================================================*/
+/*========================backdrop-modal ================================*/
 .backdrop {
   position: fixed;
   left: 0;
@@ -985,7 +974,7 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
-/*====================*/
+/*========backdrop-modal-form ============*/
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -1009,7 +998,6 @@ img {
   color: var(--primary-text-color); /* #757575;*/
   margin-bottom: 10px; /* ОТ ПОЛЯ */
 }
-
 .user-data {
   font-family: Roboto;
   font-style: 400;
@@ -1164,37 +1152,14 @@ img {
   background-origin: border-box;*/
   border: var(--accent-color);
   background-image: url(../img/check.svg);
-
   /* transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 /*.modal-form-policy:checked {
   transition: border-color 3000ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
     background-color 3000ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }*/
-/*========================*/
-/* ПОРТФОЛИО 2-я стр  =========*/
-.img-title {
-  display: block;
-  color: var(--title-text-color);
-  font-size: 18px;
-  line-height: 2;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  padding-bottom: 4px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 20px;
-}
-.img-text {
-  color: var(--primary-text-color); /* #757575;*/
-  font-size: 16px;
-  line-height: 1.87;
-  font-weight: 400;
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-  letter-spacing: 0.03em;
-}
+/*====================================================================*/
+
 /*===============================================*/
 /*.modal__form-input-wrapper { 
   position: relative;

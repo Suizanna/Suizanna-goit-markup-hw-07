@@ -1,0 +1,92 @@
+.feature-item-logo {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 auto;*/
+  /* list-style: none;*/
+}
+.features-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.features-text {
+  /*font-family: Roboto;
+    font-style: normal;*/
+  /*font-weight: 400;*/
+  font-size: 14px;
+  width: 270px;
+  line-height: 1.71;
+  color: var(--primary-text-color); /* #757575;*/
+}
+/*===FEATURES======Наши Особенности ИКОНКИ 1стр========*/
+.list {
+  display: flex;
+  list-style: none;
+  /*padding: ;*/
+}
+.list-item {
+  width: 350px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Наши Особенности* Картинки-антена и т д ===========*/
+.list-item::before {
+  display: block; /*сдела по видео-уроку 20.11.*/
+  content: "";
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-size: 65px 70px;
+  background-position: center;
+  /* margin-right: 30px; */
+  border-radius: 4px;
+}
+.list-item-Antena .feature-item-logo::before {
+  content: "";
+  background-image: url(../img/antenna.svg);
+  width: 70px;
+  height: 70px;
+}
+.list-item-Clock .feature-item-logo::before {
+  background-image: url(../img/clock.svg);
+  content: "";
+  width: 70px;
+  height: 70px;
+}
+.list-item-Diagram .feature-item-logo::before {
+  background-image: url(../img/diagram.svg);
+  content: "";
+  width: 70px;
+  height: 70px;
+}
+.list-item-Astronaut .feature-item-logo::before {
+  background-image: url(../img/astronaut.svg);
+  content: "";
+  width: 70px;
+  height: 70px;
+}
