@@ -71,19 +71,33 @@
 
 /*=======ФУТЕР ЛОГО==========*/
 .footer-logo {
-  display: block;
+  // display: block;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  letter-spacing: 0.03em;
+  // font-size: 26px;
+  // line-height: 1.19;
   color: var(--primary-bg-color);
   text-decoration: none;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer-logo {
+    font-size: 24px;
+    line-height: 1.166;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 .logo-color {
   color: var(--accent-color);
 }
+/*=============================*/
 .footer-address {
   font-family: Roboto;
   font-style: normal;

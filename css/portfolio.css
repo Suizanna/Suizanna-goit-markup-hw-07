@@ -93,57 +93,141 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+  }
 }
 
 .header {
-  border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.site-nav {
+  display: flex;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+  }
+}
+
+.item {
+  position: relative;
+}
+
+/*==========================*/
+/*.header {
+  border-bottom: 1px solid #ececec;
+}*/
 .container-main {
   justify-content: space-between;
-  display: flex;
+  /*display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin: 0 auto;*/
   background-color: var(--primary-bg-color);
   height: 80px;
 }
 
-.main-nav {
+/*.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
+}*/
+/*LOGO*/
 .page-logo {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  /* font-size: 26px;
+  line-height: 1.19;*/
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-decoration: none;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  /*  margin-top: 24px;
+  margin-bottom: 25px;*/
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .page-logo {
+    font-size: 24px;
+    line-height: 1.166;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .logo-color {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  text-align: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .logo-color {
+    font-size: 24px;
+    line-height: 1.166;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-color {
+    font-size: 26px;
+    line-height: 1.192;
+  }
+}
+
+/*===========================================*/
 /* Навигация на другие страницы ========== */
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -153,14 +237,26 @@ img {
 }
 
 /*.site-nav .link.visited {} */
-.site-nav .link {
-  /*font-family: Roboto;
-    font-style: normal;*/
+/*.site-nav .link {
+  font-family: Roboto;
+  font-style: normal;
   display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  text-decoration: none;
+}*/
+.site-nav .link {
+  /**/
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  display: block;
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -520,21 +616,33 @@ img {
 /*================*/
 /*=======ФУТЕР ЛОГО==========*/
 .footer-logo {
-  display: block;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--primary-bg-color);
   text-decoration: none;
-  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer-logo {
+    font-size: 24px;
+    line-height: 1.166;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .logo-color {
   color: var(--accent-color);
 }
 
+/*=============================*/
 .footer-address {
   font-family: Roboto;
   font-style: normal;
