@@ -156,7 +156,8 @@ img {
   width: 528px;
   min-height: 581px;
   background-color: var(--primary-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
 }
@@ -349,7 +350,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   /* #757575;*/
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-policy-label::before {
@@ -374,114 +376,49 @@ img {
 }
 
 .header {
-  position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .main-nav {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.site-nav {
-  display: flex;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .site-nav {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .site-nav {
-    margin-left: 88px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    margin-left: 93px;
-  }
-}
-
-.item {
-  position: relative;
-}
-
-/*==========================*/
-/*.header {
   border-bottom: 1px solid #ececec;
-}*/
+}
+
 .container-main {
   justify-content: space-between;
-  /*display: flex;
+  display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;*/
+  margin: 0 auto;
   background-color: var(--primary-bg-color);
   height: 80px;
 }
 
-/*.main-nav {
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}*/
-/*LOGO*/
+}
+
 .page-logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
-  /* font-size: 26px;
-  line-height: 1.19;*/
+  font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-decoration: none;
-  /*  margin-top: 24px;
-  margin-bottom: 25px;*/
-}
-
-@media screen and (min-width: 320px) and (max-width: 1199px) {
-  .page-logo {
-    font-size: 24px;
-    line-height: 1.166;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-logo {
-    font-size: 26px;
-    line-height: 1.192;
-  }
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .logo-color {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
-  .logo-color {
-    font-size: 24px;
-    line-height: 1.166;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .logo-color {
-    font-size: 26px;
-    line-height: 1.192;
-  }
-}
-
-/*===========================================*/
 /* Навигация на другие страницы ========== */
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -491,26 +428,14 @@ img {
 }
 
 /*.site-nav .link.visited {} */
-/*.site-nav .link {
-  font-family: Roboto;
-  font-style: normal;
+.site-nav .link {
+  /*font-family: Roboto;
+    font-style: normal;*/
   display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
-  text-decoration: none;
-}*/
-.site-nav .link {
-  /**/
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  display: block;
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -619,7 +544,12 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--third-bg-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img16.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/img16.jpg");
 }
 
 .hero-title {
@@ -722,7 +652,8 @@ img {
   padding: 10px;
   margin: 10px;
   border-radius: 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 /* Наши Особенности* Картинки-антена и т д ===========*/
@@ -858,7 +789,8 @@ img {
 }
 
 .team-flex-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-bg-color);
 }
