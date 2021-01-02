@@ -115,14 +115,16 @@
   .team-img {
     width: 354px;
   }
-    .team-flex-item:nth-child(2n) { //всех чётных элементов
-      margin-left: 30px;
+  .team-flex-item:nth-child(2n) {
+    //всех чётных элементов
+    margin-left: 30px;
   }
   .team-flex-item:not(:nth-last-child(-n + 2)) {
     // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    // outline: 1px solid red;
   }
- 
+
   .team-text {
     font-size: 16px;
     line-height: 1.18;

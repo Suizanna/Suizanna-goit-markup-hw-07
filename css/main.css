@@ -1625,7 +1625,7 @@ img {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 100%;
+    width: 450px;
     height: 50px;
     padding: 16px 15px;
     margin-bottom: 20px;
@@ -1648,6 +1648,7 @@ img {
     padding: 10px 62px 10px 29px;
     align-items: center;
     text-align: center;
+    margin: auto;
     border: none;
     background-image: url("../img/send.png");
     background-repeat: no-repeat;
