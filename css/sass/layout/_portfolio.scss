@@ -200,10 +200,10 @@
   .button-nav {
     font-family: inherit;
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-
+    @include font(16px, 500, 26px);
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.62;
     text-align: center;
     align-items: center;
     display: block;
@@ -247,9 +247,10 @@
   .img-title {
     display: block;
     color: var(--title-text-color);
-    font-size: 18px;
-    line-height: 2;
-    font-weight: 700;
+    @include font(18px, 700, 36px);
+    // font-size: 18px;
+    // line-height: 2;
+    // font-weight: 700;
     letter-spacing: 0.06em;
     padding-bottom: 4px;
     padding-right: 24px;
@@ -258,9 +259,10 @@
   }
   .img-text {
     color: var(--primary-text-color); /* #757575;*/
-    font-size: 16px;
-    line-height: 1.87;
-    font-weight: 400;
+    @include font(16px, 400, 30px);
+    // font-size: 16px;
+    // line-height: 1.87;
+    // font-weight: 400;
     padding-bottom: 20px;
     padding-right: 24px;
     padding-left: 24px;
