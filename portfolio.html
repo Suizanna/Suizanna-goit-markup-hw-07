@@ -63,6 +63,15 @@
             <li class="project-list-item">
                 <a href="" class="project-list-item link">
                     <div class="project-list-overlay">
+                        <source
+                        srcset="
+                          ./images/portfolio/desktop/webp/img.webp    1x,
+                          ./images/portfolio/desktop/webp/img_2x.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+                    
                         <img src="./img/img(7).jpg" alt="Экран планшета" width="370">
         
                         <p class="overlay">
@@ -212,7 +221,7 @@
     <!--ФУТЕР-->
     <footer class="footer-title">
     <div class="container footer-box">
-    <div class="footer-tablet-container"> 
+    <!-- <div class="footer-tablet-container">  -->
        <!--ФУТЕР-ЛОГО--> 
        <div class="footer-left">
         <a class="footer-logo link" href="./index.html"><span class="logo-color link">Web</span>Studio</a>            
@@ -270,7 +279,7 @@
             </div>
             </form>
         </div>
-    </div>
+    <!-- </div> -->
     </div>
     </footer>
 </body>
