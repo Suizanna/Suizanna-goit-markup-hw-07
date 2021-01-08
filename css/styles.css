@@ -802,10 +802,11 @@ img {
   color: var(--title-text-color);
 }
 /* ПОРТФОЛИО КАРТОЧКИ */
-/* .container .carts {
+.container .carts {
   border: 1px solid #eeeeee;
-  border-top: none;
-} */
+  /*border-top: none;*/
+}
+
 .border {
   border: 1px solid #eeeeee;
   border-top: none;
