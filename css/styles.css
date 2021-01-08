@@ -204,7 +204,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color); /*#757575;*/
-  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-nav {
   display: flex;
@@ -445,7 +445,7 @@ img {
 }
 /*========Команда=============*/
 .team {
-  background-color: var(--second-bg-color); /*#f5f4fa;*/
+  background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px; /*на секцию задаем*/
 }
@@ -453,6 +453,7 @@ img {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
+  /*margin-bottom: 50px;*/
   line-height: 1.16;
   text-align: center;
   padding-bottom: 50px; /*от Наша команда до img*/
@@ -461,14 +462,13 @@ img {
   display: flex;
   justify-content: space-between; /*фото в строку*/
   /* padding-left: 15px; /*между фото*/
-  /* padding-right: 15px; */
+  /* padding-right: 15px;*/
 }
-
 .team-flex-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--primary-bg-color);
+  background: #ffffff;
 }
 .team-text {
   color: var(--title-text-color);
@@ -635,9 +635,11 @@ img {
 .social-list-svg {
   fill: var(--primary-bg-color);
 }
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: var(--accent-color);
 }
+
 /*=======ФУТЕР ЛОГО==========*/
 .footer-logo {
   display: block;
@@ -982,8 +984,7 @@ img {
   border-radius: 4px;
   padding: 40px;
 }
-
-.modal-close-btn {
+.close-btn {
   position: absolute;
   top: 8px;
   right: 8px;

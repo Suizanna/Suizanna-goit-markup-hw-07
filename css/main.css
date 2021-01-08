@@ -519,7 +519,11 @@ img {
   /*#2196F3; */
 }
 
-.link:hover {
+.link:hover .contact-item-svg-envelope {
+  fill: var(--accent-color);
+}
+
+.link:hover .contact-item-svg-Mobile {
   fill: var(--accent-color);
 }
 
@@ -928,7 +932,8 @@ img {
     /* margin-bottom: 100px;*/
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .social-list-link:hover {
+  .social-list-link:hover,
+  .social-list-link:focus {
     background-color: var(--accent-color);
   }
   .social-list-svg {

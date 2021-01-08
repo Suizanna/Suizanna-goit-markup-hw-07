@@ -224,6 +224,7 @@
   }
 
   .button-nav:hover,
+  .button-nav:focus,
   .button-nav:active {
     color: var(--primary-bg-color); /*#ffffff*/
     background-color: var(--accent-color); /*#2196F3;*/
