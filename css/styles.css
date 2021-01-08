@@ -745,19 +745,17 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.container {
+/* .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 .button-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
-
 .button-list .button-nav {
   margin-right: 8px;
 }
@@ -804,19 +802,10 @@ img {
   color: var(--title-text-color);
 }
 /* ПОРТФОЛИО КАРТОЧКИ */
-.container-img {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 94px;
-}
-.container-img .carts {
+/* .container .carts {
   border: 1px solid #eeeeee;
-  /*border-top: none;*/
-}
-
+  border-top: none;
+} */
 .border {
   border: 1px solid #eeeeee;
   border-top: none;
