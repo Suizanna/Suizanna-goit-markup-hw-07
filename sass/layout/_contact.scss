@@ -50,7 +50,6 @@
   align-self: flex-end;
   cursor: pointer;
   /*list-style: none;*/
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
@@ -70,13 +69,11 @@
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-item-svg-Mobile {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-nav .link {
   font-family: Roboto;
@@ -102,6 +99,7 @@
 // .link:focus .contact-item-svg-Mobile {
 //   fill: var(--accent-color);
 // }
-.link:hover .link:focus {
+.link:hover,
+.link:focus {
   fill: var(--accent-color);
 }
