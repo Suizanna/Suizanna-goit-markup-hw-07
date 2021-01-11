@@ -897,8 +897,7 @@ img {
   left: 0;
   opacity: 0;
 }
-.project-list-item > .overlay:hover,
-.project-list-item > .overlay:focus {
+.project-list-item > .overlay .project-list-item > .overlay {
   opacity: 1;
   background: rgba(33, 150, 243, 0.9);
 }

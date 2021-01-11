@@ -395,8 +395,6 @@ img {
   .project-list-item:hover .overlay {
     /* opacity: 1; */
     transform: translateY(0);
-  }
-  .project-list-item:hover {
     box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 4px rgba(0, 0, 0, 0.16);
   }
   .project-list-item {
@@ -428,8 +426,7 @@ img {
     left: 0;
     opacity: 0;
   }
-  .project-list-item > .overlay:hover,
-  .project-list-item > .overlay:focus {
+  .project-list-item > .overlay .project-list-item > .overlay {
     opacity: 1;
     background: rgba(33, 150, 243, 0.9);
   }
