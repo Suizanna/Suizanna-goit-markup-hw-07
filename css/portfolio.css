@@ -243,12 +243,14 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .contact-item-svg-Mobile {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .contact-nav .link {
@@ -272,7 +274,7 @@ img {
 
 .link:hover,
 .link:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 1200px) {

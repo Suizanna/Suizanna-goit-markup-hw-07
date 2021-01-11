@@ -178,11 +178,13 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 .contact-item-svg-Mobile {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: currentColor;
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus,
@@ -190,11 +192,9 @@ img {
   color: var(--accent-color); /*#2196F3; */
 }
 
-.link:hover,
-.link:focus {
-  fill: var(--accent-color);
+.link:hover, .link:focus {
+    color: var(--accent-color);
 }
-
 .contact-nav .link {
   font-family: Roboto;
   font-size: 14px;
