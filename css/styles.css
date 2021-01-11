@@ -864,6 +864,8 @@ img {
 .project-list-item:hover .overlay {
   /* opacity: 1; */
   transform: translateY(0);
+}
+.project-list-item:hover {
   box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 4px rgba(0, 0, 0, 0.16);
 }
@@ -889,7 +891,7 @@ img {
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--primary-bg-color);
-  background: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.9);
   width: 370px;
   height: 294px;
   margin: 0 auto;
@@ -897,9 +899,10 @@ img {
   left: 0;
   opacity: 0;
 }
-.project-list-item > .overlay .project-list-item > .overlay {
+.project-list-item > .overlay:hover,
+.project-list-item > .overlay:focus {
   opacity: 1;
-  background: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 /*.project-list-item::before {
     display: inline-block;
