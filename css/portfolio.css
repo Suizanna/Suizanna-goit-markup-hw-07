@@ -273,13 +273,7 @@ img {
   /*#2196F3; */
 }
 
-.link:hover .contact-item-svg-envelope,
-.link:focus .contact-item-svg-envelope {
-  fill: var(--accent-color);
-}
-
-.link:hover .contact-item-svg-Mobile,
-.link:focus .contact-item-svg-Mobile {
+.link:hover .link:focus {
   fill: var(--accent-color);
 }
 

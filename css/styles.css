@@ -178,25 +178,28 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-item-svg-Mobile {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus,
 .contact-nav .link:active {
   color: var(--accent-color); /*#2196F3; */
 }
-.link:hover 
-.link:focus  {
+/* .link:hover .contact-item-svg-envelope,
+.link:focus .contact-item-svg-envelope {
   fill: var(--accent-color);
 }
-.link:hover 
-.link:focuse {
+.link:hover .contact-item-svg-Mobile,
+.link:focus .contact-item-svg-Mobile {
+  fill: var(--accent-color);
+} */
+
+.link:hover,
+.link:focus {
   fill: var(--accent-color);
 }
 
@@ -215,8 +218,6 @@ img {
   align-self: flex-end;
   cursor: pointer;
   /*list-style: none;*/
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .contact-nav .contact-item + .contact-item {
