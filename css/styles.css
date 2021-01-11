@@ -191,12 +191,12 @@ img {
 .contact-nav .link:active {
   color: var(--accent-color); /*#2196F3; */
 }
-.link:hover .contact-item-svg-envelope,
-.link:focus .contact-item-svg-envelope {
+.link:hover 
+.link:focus  {
   fill: var(--accent-color);
 }
-.link:hover .contact-item-svg-Mobile,
-.link:focus .contact-item-svg-Mobile {
+.link:hover 
+.link:focuse {
   fill: var(--accent-color);
 }
 
