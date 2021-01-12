@@ -423,6 +423,21 @@ img {
     border: 1px solid #eeeeee;
     border-top: none;
   }
+  .project-list-item::before {
+    font-weight: 400px;
+    /*font-style: 400;*/
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--primary-bg-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 370px;
+    height: 294px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
