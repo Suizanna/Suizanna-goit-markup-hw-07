@@ -1,87 +1,87 @@
-// // MOBILE
-// @media screen and (min-width: 320px) and (max-width: 767px) {
-//   .features {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-//   }
-//   .features-list {
-//     // margin-top: 60px;
-//     display: block;
-//   }
-//   .features-title {
-//     font-family: Roboto;
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.142;
-//     margin-bottom: 10px;
-//     // margin-top: 0px;
-//     text-align: center;
-//     text-transform: uppercase;
-//     color: var(--title-text-color);
-//   }
-//   .features-text {
-//     /*font-family: Roboto;
-//     font-style: normal;*/
-//     /*font-weight: 400;*/
-//     font-size: 14px;
-//     line-height: 1.714;
-//     margin-bottom: 30px;
-//     color: var(--primary-text-color); /* #757575;*/
-//   }
-// }
-// /* Наши Особенности* Картинки-антена и т д ===========*/
+// MOBILE
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .features-list {
+    // margin-top: 60px;
+    display: block;
+  }
+  .features-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    margin-bottom: 10px;
+    // margin-top: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+  .features-text {
+    /*font-family: Roboto;
+    font-style: normal;*/
+    /*font-weight: 400;*/
+    font-size: 14px;
+    line-height: 1.714;
+    margin-bottom: 30px;
+    color: var(--primary-text-color); /* #757575;*/
+  }
+}
+/* Наши Особенности* Картинки-антена и т д ===========*/
 
-// @media screen and (min-width: 320px) and (max-width: 767px) {
-//   .list-item {
-//     width: 100%;
-//   }
-//   .feature-item-logo {
-//     // width: 270px;
-//     height: 120px;
-//     background-color: #f5f4fa;
-//     border-radius: 4px;
-//     margin-bottom: 30px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-//   // .list-item::before {
-//   //   display: block;
-//   //   content: "";
-//   //   height: 120px;
-//   //   background-repeat: no-repeat;
-//   //   background-position: center;
-//   //   margin-bottom: 30px;
-//   //   background-color: #f5f4fa;
-//   //   border-radius: 4px;
-//   //   // background-size: 65px 70px;
-//   // }
-//   .list-item-Antena .feature-item-logo::before {
-//     content: "";
-//     background-image: url(../img/antenna.svg);
-//     width: 70px;
-//     height: 70px;
-//   }
-//   .list-item-Clock .feature-item-logo::before {
-//     background-image: url(../img/clock.svg);
-//     content: "";
-//     width: 70px;
-//     height: 70px;
-//   }
-//   .list-item-Diagram .feature-item-logo::before {
-//     background-image: url(../img/diagram.svg);
-//     content: "";
-//     width: 70px;
-//     height: 70px;
-//   }
-//   .list-item-Astronaut .feature-item-logo::before {
-//     background-image: url(../img/astronaut.svg);
-//     content: "";
-//     width: 70px;
-//     height: 70px;
-//   }
-// }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .list-item {
+    width: 100%;
+  }
+  .feature-item-logo {
+    // width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .list-item::before {
+  //   display: block;
+  //   content: "";
+  //   height: 120px;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   margin-bottom: 30px;
+  //   background-color: #f5f4fa;
+  //   border-radius: 4px;
+  //   // background-size: 65px 70px;
+  // }
+  .list-item-Antena .feature-item-logo::before {
+    content: "";
+    background-image: url(../img/antenna.svg);
+    width: 70px;
+    height: 70px;
+  }
+  .list-item-Clock .feature-item-logo::before {
+    background-image: url(../img/clock.svg);
+    content: "";
+    width: 70px;
+    height: 70px;
+  }
+  .list-item-Diagram .feature-item-logo::before {
+    background-image: url(../img/diagram.svg);
+    content: "";
+    width: 70px;
+    height: 70px;
+  }
+  .list-item-Astronaut .feature-item-logo::before {
+    background-image: url(../img/astronaut.svg);
+    content: "";
+    width: 70px;
+    height: 70px;
+  }
+}
 // /*TABLET*/
 // @media screen and (min-width: 768px) and (max-width: 1199px) {
 //   .features {

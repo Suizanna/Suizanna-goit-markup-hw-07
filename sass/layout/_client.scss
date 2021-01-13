@@ -1,62 +1,64 @@
-// // MOBILE
-// @media screen and (min-width: 320px) and (max-width: 767px) {
-//   .client {
-//     display: flex;
-//     flex-wrap: wrap;
-//     padding-bottom: 60px;
-//     padding-top: 60px;
-//   }
-//   .client-title {
-//     font-weight: 700;
-//     font-size: 28px;
-//     line-height: 1.17;
-//     margin-bottom: 30px;
-//     text-align: center;
-//     color: var(--title-text-color); /*#212121;*/
-//   }
-//   .client-list {
-//     display: flex;
-//     flex-wrap: wrap;
-//     cursor: pointer;
-//   }
-//   .client-item {
-//     width: 210px;
-//     height: 90px;
-//   }
-//   .client-item:nth-child(2n) { //каждая 2-я
-//     margin-left: 30px;
-//     // outline: 1px solid red;
-//   }
-//   .client-item:not(:nth-last-child(-n + 2)) { //все кроме 2-х
-//     margin-bottom: 30px;
-//     // outline: 1px solid red;
-//   }
-//   .client-link {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 100%;
-//     height: 100%;
-//     width: 210px;
-//     height: 90px;
-//     border: 1px solid #afb1b8;
-//     border-radius: 4px;
-//     fill: #afb1b8;
-//     cursor: pointer;
-//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавный переход цвета при ховере*/
-//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-//   .client-svg {
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-//   .client-link:hover,
-//   .client-link:focus {
-//     fill: var(--accent-color);
-//   }
-//   .client-link:hover {
-//     border-color: var(--accent-color);
-//   }
-// }
+// MOBILE
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .client-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--title-text-color); /*#212121;*/
+  }
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  .client-item {
+    width: 210px;
+    height: 90px;
+  }
+  .client-item:nth-child(2n) {
+    //каждая 2-я
+    margin-left: 30px;
+    // outline: 1px solid red;
+  }
+  .client-item:not(:nth-last-child(-n + 2)) {
+    //все кроме 2-х
+    margin-bottom: 30px;
+    // outline: 1px solid red;
+  }
+  .client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    width: 210px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавный переход цвета при ховере*/
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client-svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client-link:hover,
+  .client-link:focus {
+    fill: var(--accent-color);
+  }
+  .client-link:hover {
+    border-color: var(--accent-color);
+  }
+}
 // @media screen and (min-width: 768px) and (max-width: 1199px) {
 //   .client {
 //     display: flex;
